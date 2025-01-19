@@ -10,4 +10,7 @@ export class User {
 
     @Column({ unique: true }) // Colonne avec contrainte d'unicité
     email: string;
+
+    @Column() // Colonne simple
+    password: string;
 }

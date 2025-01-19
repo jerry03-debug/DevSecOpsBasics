@@ -13,7 +13,7 @@ async function bootstrap() {
   app.useGlobalPipes(
     new ValidationPipe({
       whitelist: true, // Supprime les champs non définis dans le DTO
-      forbidNonWhitelisted: true, // Rejette les champs non définis dans le DTO
+      // forbidNonWhitelisted: false, // Rejette les champs non définis dans le DTO
       transform: true, // Transforme les données en instance du DTO
     }),
   );
